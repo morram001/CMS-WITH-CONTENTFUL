@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(Mario.ttf);
+}
+
+.hero-image {
+    background-image: url(img/supermario.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: myfont;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0.5rem 0.5rem black;
+    margin: 0;
+}
+
+.hero-text p {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.875rem;
+    text-shadow: 0.313rem 0.313rem black;
+}
+
+.hero-button {
+    border: none;
+    color: black;
+    padding: 1.125rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 0.25rem;
+}
+
+nav {
+    background-color: red;
+    width: auto;
+    height: 6.25rem;
+    padding: 1.25rem;
+}
+
+nav h1 {
+    color: white;
+    display: inline;
+    padding-right: 1.875rem;
+    font-weight: bolder;
+    font-size: 1.875rem;
+    font-family: myfont;
+    padding-right: 4.688rem;
+    text-shadow: 0.313rem 0.313rem black;
+}
+
+nav li {
+    display: inline;
+    padding-right: 1.875rem;
+    text-shadow: 0.188rem 0.188rem black;
+}
+
+nav li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-family: myfont;
+    color: yellow;
+}
+
+.main-image {
+    width: 18.75rem;
+    height: auto;
+    padding-top: 1.875rem;
+}
+
+.character-section, h2  {
+    color: white;
+    font-family: myfont;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.products-section, h3  {
+    color: yellow;
+    font-family: myfont;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0.188rem 0.188rem black;
+    padding-top: 2.5rem;
+}
+
+.products {
+    display: grid;
+    justify-items: center;
+    padding-top: 100px;
+}
+
+.name {
+    padding: 1.25rem;
+    color: red;
+    font-family: myfont;
+    font-size: 1.5rem;
+    text-shadow: 0.188rem 0.188rem black;
+}
+
+.description {
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 1.875rem;
+    padding-left: 10.625rem;
+    padding-right: 10.625rem;
+}
+
+@media only screen and (max-width: 48rem) /* TABLET 768 */ {
+
+    .name {
+        text-align: center;
+    }
+    
+    .description {
+        text-align: center;
+        
+    }
+
+    .characterdescription {
+        padding-left: 4.625rem;
+        padding-right: 4.625rem;
+        text-align: center;
+    }
+
+    #contentgoesHere h3 {
+        margin: auto;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+        padding: 0.6169;
+    }
+}
+
+@media only screen and (max-width: 26.563rem) /* MOBILE L 425 */ {
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        padding-left: 2.625rem;
+        padding-right: 2.625rem;
+        
+    }
+
+    nav {
+        height: 9.25rem;
+    }
+
+    nav h1 {
+        float: left;
+    }
+
+    nav li a {
+        float: right;
+        padding-left: 0.938rem;
+        padding-top: 1.625rem;
+        padding-bottom: 0.938rem;
+    }
+
+    .characterdescription {
+        padding-left: 2.625rem;
+        padding-right: 2.625rem;
+        justify-items: center;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+        padding: 0.6169;
+    }
+
+    .footer h1 {
+        padding-left: auto;
+    }
+
+    #contentgoesHere h3 {
+        margin: auto;
+    }
+
+    #contentgoesHere p {
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-items: center;
+    padding: 1.25;
+    padding-top: 5rem;
+}
+
+.mainimage {
+    width: 18.75rem;
+    height: 18.75rem;
+    display: grid;
+    justify-items: center;
+}
+
+.footer {
+    height: 14.25rem;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+ }
+
+ .footer h1 {
+    color: white;
+    padding-top: 3.125rem;
+    font-weight: bolder;
+    font-size: 1.875rem;
+    font-family: myfont;
+    text-shadow: 0.313rem 0.313rem black;
+}
+
+.footer li {
+    padding-right: 1.875rem;
+    text-shadow: 0.188rem 0.188rem black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: myfont;
+    color: yellow;
+}
+
+.footer p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.characterdescription {
+    padding-left: 4.625rem;
+    padding-right: 4.625rem;
+    text-align: center;
+}
+
+.products a {
+    border: none;
+    color: black;
+    padding: 1.125rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 0.25rem;
+    font-family: myfont;
+}
+
+#contentgoesHere h1 {
+    padding: 1.25rem;
+    color: red;
+    font-family: myfont;
+    font-size: 1.5rem;
+    text-shadow: 0.188rem 0.188rem black;
+    text-align: center;
+}
+
+#contentgoesHere p {
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+#contentgoesHere h3 {
+    color: yellow;
+}
+
+#contentgoesHere .mainimage {
+    height: fit-content;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+#contentgoesHere h4 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
